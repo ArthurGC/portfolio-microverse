@@ -7,6 +7,7 @@ $clr-neutral-600: #344563;
 
 *, ::before, ::after{
 	box-sizing: border-box;
+	font-family: $ff-poppins;
 }
 
 body,
@@ -19,7 +20,7 @@ p{
 }
 
 .navbar{
-	padding: 1rem 2rem;
+	padding: 1rem 1.5rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -40,6 +41,31 @@ p{
 			font-weight: 700;
 			font-size: 18px;
 		}
+	}
+}
+
+.head{
+	padding: 7rem 1.5rem;
+	&__title{
+		color: $clr-neutral-800;
+		font-size: 40px;
+		font-weight: 700;
+		line-height: 52px;
+		width: 10ch;
+	}
+	&__dsc{
+		margin: 1rem 0;
+		color: $clr-neutral-600;
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 400;
+	}
+	&__link{
+		color: #7F8CFF;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 24px;
+		text-decoration: none;
 	}
 }
 

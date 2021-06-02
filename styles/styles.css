@@ -1,1 +1,34 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");/*# sourceMappingURL=styles.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar__logo__text {
+  color: #6070FF;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+.navbar__menu {
+  display: none;
+}
+.navbar__hamb i {
+  color: #6070FF;
+  font-weight: 700;
+  font-size: 18px;
+}/*# sourceMappingURL=styles.css.map */

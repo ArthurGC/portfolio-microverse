@@ -1,2 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
 $ff-poppins: 'Poppins', sans-serif;
+$clr-primary-400:#6070FF;
+$clr-primary-300: #7F8CFF;
+$clr-neutral-800: #172B4D;
+$clr-neutral-600: #344563;
+
+*, ::before, ::after{
+	box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p{
+	margin: 0;
+	padding: 0;
+}
+
+.navbar{
+	padding: 1rem 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	&__logo{
+		&__text{
+			color: $clr-primary-400;
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 20px;
+		}
+	}
+	&__menu{
+		display: none;
+	}
+	&__hamb{
+		i{
+			color: $clr-primary-400;
+			font-weight: 700;
+			font-size: 18px;
+		}
+	}
+}
+

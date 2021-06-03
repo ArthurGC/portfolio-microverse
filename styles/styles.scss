@@ -67,17 +67,18 @@ p {
   line-height: 20px;
 }
 
-.link{
-	text-decoration: none;
+.link {
+  text-decoration: none;
 }
 
-.ul{
-	list-style: none;
-	margin: 0;
-	padding: 0;
+.ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.flex{
-	display: flex;
+
+.flex {
+  display: flex;
 }
 
 .navbar {
@@ -86,7 +87,7 @@ p {
   justify-content: space-between;
 
   &__link {
-      color: $clr-primary-400;
+    color: $clr-primary-400;
   }
 
   &__menu {
@@ -139,10 +140,11 @@ p {
 
   &__icons {
     margin: 0.5rem 0;
-	&__ul{
-		align-items: center;
-		justify-content: space-between;
-		width: 11rem;
-	}
+
+    &__ul {
+      align-items: center;
+      justify-content: space-between;
+      width: 11rem;
+    }
   }
 }

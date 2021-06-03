@@ -4,6 +4,7 @@
 
 In this project, I set up my portfolio repository. My goal here is to set up and customize the first sections of my portfolio.
 
+![screenshot](/images/mobile_preview_v1.png)
 ## :hammer: Built With
 
 - HTML and CSS

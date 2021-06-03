@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
-
 *,
 ::before,
 ::after {
@@ -74,20 +73,21 @@ p {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .navbar {
   padding: 1rem 1.5rem;
   align-items: center;
   justify-content: space-between;
 }
-
 .navbar__link {
   color: #6070ff;
 }
-
 .navbar__menu {
   display: none;
 }
-
 .navbar__hamb {
   cursor: pointer;
 }
@@ -115,29 +115,24 @@ p {
   border-bottom-left-radius: 5rem;
   z-index: 10;
 }
-
 .head__title {
   color: #172b4d;
   width: 10ch;
 }
-
 .head__dsc {
   margin: 0.8rem 0;
   color: #344563;
 }
-
 .head__link {
   color: #7f8cff;
   text-decoration: none;
   text-transform: uppercase;
 }
-
 .head__icons {
   margin: 0.5rem 0;
 }
-
 .head__icons__ul {
   align-items: center;
   justify-content: space-between;
   width: 11rem;
-}
+}/*# sourceMappingURL=styles.css.map */

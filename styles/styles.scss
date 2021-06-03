@@ -67,12 +67,15 @@ p {
   line-height: 20px;
 }
 
+.link{
+	text-decoration: none;
+}
 .navbar {
   padding: 1rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  
   &__logo {
     &__text {
       color: $clr-primary-400;

@@ -70,6 +70,11 @@ p {
 .link{
 	text-decoration: none;
 }
+
+.ul{
+	list-style: none;
+}
+
 .navbar {
   padding: 1rem 1.5rem;
   display: flex;
@@ -133,7 +138,6 @@ p {
 
   &__icons {
     margin: 0.5rem 0;
-
     img {
       cursor: pointer;
       margin-right: 1rem;

@@ -63,6 +63,10 @@ p {
   text-decoration: none;
 }
 
+.ul {
+  list-style: none;
+}
+
 .navbar {
   padding: 1rem 1.5rem;
   display: flex;

@@ -73,11 +73,15 @@ p {
 
 .ul{
 	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.flex{
+	display: flex;
 }
 
 .navbar {
   padding: 1rem 1.5rem;
-  display: flex;
   align-items: center;
   justify-content: space-between;
 
@@ -112,7 +116,6 @@ p {
 }
 
 .head {
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
   position: relative;
@@ -138,9 +141,11 @@ p {
 
   &__icons {
     margin: 0.5rem 0;
-    img {
-      cursor: pointer;
-      margin-right: 1rem;
-    }
+	&__ul{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 11rem;
+	}
   }
 }

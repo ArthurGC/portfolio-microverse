@@ -100,6 +100,7 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-bottom-left-radius: 5rem;
   top: 0;
   left: 0;
   width: 100%;
@@ -112,7 +113,6 @@ p {
   align-items: flex-start;
   position: relative;
   padding: 6rem 1.5rem;
-  border-bottom-left-radius: 5rem;
   z-index: 10;
 }
 .head__title {
@@ -135,4 +135,24 @@ p {
   align-items: center;
   justify-content: space-between;
   width: 11rem;
+}
+
+.works {
+  grid-template-rows: repeat(3, 552px);
+  row-gap: 5.5rem;
+  justify-content: center;
+  padding: 7.125rem 1.5rem;
+}
+.works__card {
+  padding: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 1rem;
+  border: 1px solid #DFE1E6;
+}
+.works__card__img {
+  width: 100%;
+}
+.works__card__img img {
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */

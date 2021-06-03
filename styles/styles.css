@@ -78,7 +78,7 @@ p {
   align-items: center;
   justify-content: space-between;
 }
-.navbar__logo__text {
+.navbar__link {
   color: #6070ff;
 }
 .navbar__menu {

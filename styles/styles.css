@@ -128,7 +128,6 @@ p {
   margin: 0.5rem 0;
 }
 .head__icons__ul {
-  display: flex;
   align-items: center;
   justify-content: space-between;
   width: 11rem;

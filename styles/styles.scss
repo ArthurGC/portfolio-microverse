@@ -247,13 +247,15 @@ p {
 }
 
 .works {
-  grid-template-rows: repeat(3, auto);
-  row-gap: 5.5rem;
-  justify-content: center;
-  padding: 7.125rem 1.5rem;
-
+  &__cards{
+	grid-template-rows: repeat(3, auto);
+	row-gap: 5.5rem;
+	justify-content: center;
+	padding: 7.125rem 1.5rem;
+  }
   &__card {
     padding: 1rem 1rem 1.5rem 1rem;
+	display: flex;
     flex-direction: column;
     align-items: flex-start;
     border-radius: 1rem;

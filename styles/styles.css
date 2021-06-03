@@ -285,6 +285,9 @@ p {
 .about {
   padding: 7.125rem 1.5rem;
   border-top-right-radius: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .about__title {
   width: 5ch;
@@ -334,12 +337,12 @@ p {
 .about__frameworks__top {
   align-items: center;
   justify-content: space-between;
-  padding: 23px 0;
+  padding: 23px 40px 23px 0;
   cursor: pointer;
 }
 .about__skills__top {
   align-items: center;
   justify-content: space-between;
-  padding: 23px 0;
+  padding: 23px 40px 23px 0;
   cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */

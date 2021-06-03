@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
 $ff-poppins: 'Poppins', sans-serif;
 $clr-primary-400:#6070ff;
+$clr-primary-500: #396DF2;
 $clr-primary-300: #7f8cff;
+$clr-primary-50: #EBEBFF;
 $clr-neutral-800: #172b4d;
 $clr-neutral-600: #344563;
+$clr-neutral-500: #7A869A;
 $clr-neutral-300: #f7f7f9;
 $clr-neutral-100: #fff;
 
@@ -31,16 +34,59 @@ p {
   background: $clr-neutral-100;
 }
 
+.clr-n-800{
+	color: $clr-neutral-800;
+}
+
+.clr-n-600{
+	color: $clr-neutral-600;
+}
+
+.clr-n-500{
+	color: $clr-neutral-500;
+}
+
+.clr-p-500{
+	color: $clr-primary-500;
+}
+
+.clr-p-400{
+	color: $clr-primary-400;
+}
+
+.bg-p-50{
+	background: $clr-primary-50;
+}
+
 .fz-40 {
   font-size: 40px;
+}
+
+.fz-32 {
+	font-size: 32px;
 }
 
 .fz-18 {
   font-size: 18px;
 }
 
+.fz-17 {
+	font-size: 17px;
+}
+
 .fz-16 {
   font-size: 16px;
+}
+.fz-15 {
+	font-size: 15px;
+}
+
+.fz-13 {
+	font-size: 13px;
+}
+
+.fz-12 {
+	font-size: 12px;
 }
 
 .fw-700 {
@@ -65,6 +111,10 @@ p {
 
 .lh-20 {
   line-height: 20px;
+}
+
+.lh-16 {
+	line-height: 16px;
 }
 
 .link {
@@ -154,12 +204,12 @@ p {
 }
 
 .works{
-	grid-template-rows: repeat(3, 552px);
+	grid-template-rows: repeat(3, auto);
 	row-gap: 5.5rem;
 	justify-content: center;
 	padding: 7.125rem 1.5rem;
 	&__card{
-		padding: 1rem;
+		padding: 1rem 1rem 1.5rem 1rem;
 		flex-direction: column;
 		align-items: flex-start;
 		border-radius: 1rem;
@@ -168,6 +218,35 @@ p {
 			width: 100%;
 			img{
 				width: 100%;
+			}
+		}
+		&__subtitle{
+			align-items: center;
+			column-gap: 2rem;
+			margin: 20px 0;
+			&-ul{
+				margin: 0;
+				padding: 0;
+			}
+			&-li{
+				margin-right: 2rem;
+			}
+		}
+		&__topics{
+			margin: 1rem 0 1.8rem;
+			&__text{
+				padding: 4px 12px;
+				border-radius: 8px;
+				margin-right: 8px;
+			}
+		}
+		&__btn{
+			.btn{
+				width: 124px;
+				height: 48px;
+				padding: 12px;
+				border: 1px solid #6070FF;
+				border-radius: 8px;
 			}
 		}
 	}

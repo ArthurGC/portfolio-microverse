@@ -1,99 +1,119 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
 $ff-poppins: 'Poppins', sans-serif;
-$clr-primary-400:#6070FF;
-$clr-primary-300: #7F8CFF;
-$clr-neutral-800: #172B4D;
+$clr-primary-400:#6070ff;
+$clr-primary-300: #7f8cff;
+$clr-neutral-800: #172b4d;
 $clr-neutral-600: #344563;
 $clr-neutral-300: #f7f7f9;
 $clr-neutral-100: #fff;
 
-*, ::before, ::after{
-	box-sizing: border-box;
-	font-family: $ff-poppins;
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  font-family: $ff-poppins;
 }
 
 body,
 h1,
 h2,
 h3,
-p{
-	margin: 0;
-	padding: 0;
-}
-.hero{
-	background: $clr-neutral-300;
-}
-.bg-white{
-	background: $clr-neutral-100;
-}
-.fz-40{
-	font-size: 40px;
-}
-.fz-18{
-	font-size: 18px;
-}
-.fz-16{
-	font-size: 16px;
-}
-.fw-700{
-	font-weight: 700;
-}
-.fw-500{
-	font-weight: 500;
-}
-.fw-400{
-	font-weight: 400;
-}
-.lh-52{
-	line-height: 52px;
-}
-.lh-24{
-	line-height: 24px;
-}
-.lh-20{
-	line-height: 20px;
+p {
+  margin: 0;
+  padding: 0;
 }
 
-.navbar{
-	padding: 1rem 1.5rem;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	&__logo{
-		&__text{
-			color: $clr-primary-400;
-		}
-	}
-	&__menu{
-		display: none;
-	}
-	&__hamb{
-		cursor: pointer;
-	}
+.hero {
+  background: $clr-neutral-300;
 }
 
-.head{
-	padding: 6rem 1.5rem;
-	border-bottom-left-radius: 5rem;
-	&__title{
-		color: $clr-neutral-800;
-		width: 10ch;
-	}
-	&__dsc{
-		margin: .8rem 0;
-		color: $clr-neutral-600;
-	}
-	&__link{
-		color: $clr-primary-300;
-		text-decoration: none;
-		text-transform: uppercase;
-	}
-	&__icons{
-		margin: .5rem 0;
-		img{
-			cursor: pointer;
-			margin-right: 1rem;
-		}
-	}
+.bg-white {
+  background: $clr-neutral-100;
 }
 
+.fz-40 {
+  font-size: 40px;
+}
+
+.fz-18 {
+  font-size: 18px;
+}
+
+.fz-16 {
+  font-size: 16px;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.lh-52 {
+  line-height: 52px;
+}
+
+.lh-24 {
+  line-height: 24px;
+}
+
+.lh-20 {
+  line-height: 20px;
+}
+
+.navbar {
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    &__text {
+      color: $clr-primary-400;
+    }
+  }
+
+  &__menu {
+    display: none;
+  }
+
+  &__hamb {
+    cursor: pointer;
+  }
+}
+
+.head {
+  padding: 6rem 1.5rem;
+  border-bottom-left-radius: 5rem;
+
+  &__title {
+    color: $clr-neutral-800;
+    width: 10ch;
+  }
+
+  &__dsc {
+    margin: 0.8rem 0;
+    color: $clr-neutral-600;
+  }
+
+  &__link {
+    color: $clr-primary-300;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  &__icons {
+    margin: 0.5rem 0;
+
+    img {
+      cursor: pointer;
+      margin-right: 1rem;
+    }
+  }
+}

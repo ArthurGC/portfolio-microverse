@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
-*, ::before, ::after {
+
+*,
+::before,
+::after {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
@@ -63,12 +66,15 @@ p {
   align-items: center;
   justify-content: space-between;
 }
+
 .navbar__logo__text {
-  color: #6070FF;
+  color: #6070ff;
 }
+
 .navbar__menu {
   display: none;
 }
+
 .navbar__hamb {
   cursor: pointer;
 }
@@ -77,23 +83,28 @@ p {
   padding: 6rem 1.5rem;
   border-bottom-left-radius: 5rem;
 }
+
 .head__title {
-  color: #172B4D;
+  color: #172b4d;
   width: 10ch;
 }
+
 .head__dsc {
   margin: 0.8rem 0;
   color: #344563;
 }
+
 .head__link {
-  color: #7F8CFF;
+  color: #7f8cff;
   text-decoration: none;
   text-transform: uppercase;
 }
+
 .head__icons {
   margin: 0.5rem 0;
 }
+
 .head__icons img {
   cursor: pointer;
   margin-right: 1rem;
-}/*# sourceMappingURL=styles.css.map */
+}

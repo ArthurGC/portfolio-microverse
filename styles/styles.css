@@ -23,6 +23,14 @@ p {
   background: #fff;
 }
 
+.bg-n-300 {
+  background: #f7f7f9;
+}
+
+.bg-p-50 {
+  background: #EBEBFF;
+}
+
 .clr-n-900 {
   color: #000;
 }
@@ -53,10 +61,6 @@ p {
 
 .clr-p-300 {
   color: #7f8cff;
-}
-
-.bg-p-50 {
-  background: #EBEBFF;
 }
 
 .fz-40 {
@@ -137,6 +141,39 @@ p {
   display: grid;
 }
 
+.btn {
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  transition: background 0.8s ease-in-out, color 0.8s ease-in-out;
+}
+
+.btn:hover {
+  -webkit-animation-name: btn-hover;
+          animation-name: btn-hover;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.btn:focus {
+  background: #2230D2;
+  color: #fff;
+}
+
+@-webkit-keyframes btn-hover {
+  100% {
+    box-shadow: inset 11rem 0 0 0 #6070ff, 0px 8px 16px rgba(64, 83, 252, 0.24);
+    color: #fff;
+  }
+}
+
+@keyframes btn-hover {
+  100% {
+    box-shadow: inset 11rem 0 0 0 #6070ff, 0px 8px 16px rgba(64, 83, 252, 0.24);
+    color: #fff;
+  }
+}
 .navbar {
   padding: 1rem 1.5rem;
   align-items: center;
@@ -241,6 +278,7 @@ p {
   padding: 12px;
   border: 1px solid #6070FF;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .about {
@@ -257,7 +295,7 @@ p {
   text-transform: uppercase;
 }
 .about__icons {
-  margin: 1.3rem 0;
+  margin: 1.3rem 0 1rem;
 }
 .about__icons__ul {
   align-items: center;
@@ -270,8 +308,37 @@ p {
   padding: 12px;
   border: 1px solid #6070FF;
   border-radius: 8px;
+  cursor: pointer;
 }
 .about__tools {
-  margin: 36px 0;
-  padding: 24px 12px;
+  margin: 6px 0;
+  padding: 24px 0;
+}
+.about__lang__top {
+  align-items: center;
+  justify-content: space-between;
+  padding: 23px 40px 23px 0;
+  cursor: pointer;
+}
+.about__lang__top__img {
+  transform: rotate(90deg);
+}
+.about__lang__bottom li {
+  align-items: center;
+  gap: 1rem;
+  border-radius: 8px;
+  margin: 12px 0;
+  padding: 9px 12px;
+}
+.about__frameworks__top {
+  align-items: center;
+  justify-content: space-between;
+  padding: 23px 0;
+  cursor: pointer;
+}
+.about__skills__top {
+  align-items: center;
+  justify-content: space-between;
+  padding: 23px 0;
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */

@@ -2,6 +2,7 @@
 $ff-poppins: 'Poppins', sans-serif;
 $clr-primary-400:#6070ff;
 $clr-primary-500: #396DF2;
+$clr-primary-700: #2230D2;
 $clr-primary-300: #7f8cff;
 $clr-primary-50: #EBEBFF;
 $clr-neutral-900: #000;
@@ -36,6 +37,14 @@ p {
   background: $clr-neutral-100;
 }
 
+.bg-n-300{
+	background: $clr-neutral-300;
+}
+
+.bg-p-50{
+	background: $clr-primary-50;
+}
+
 .clr-n-900{
 	color: $clr-neutral-900;
 }
@@ -66,10 +75,6 @@ p {
 
 .clr-p-300{
 	color: $clr-primary-300;
-}
-
-.bg-p-50{
-	background: $clr-primary-50;
 }
 
 .fz-40 {
@@ -147,6 +152,28 @@ p {
 
 .grid{
 	display: grid;
+}
+.btn{
+	animation-duration: .8s;
+	transition: background .8s ease-in-out, color .8s ease-in-out;
+}
+.btn:hover{
+	animation-name: btn-hover;
+	animation-fill-mode: forwards;
+	animation-delay: 0s;
+}
+.btn:focus{
+	background: $clr-primary-700;
+	color: #fff;
+	
+}
+@keyframes btn-hover {
+	100%{
+		box-shadow: inset 11rem 0 0 0 $clr-primary-400,
+		0px 8px 16px rgba(64, 83, 252, 0.24);;
+		color: #fff;
+	}
+	
 }
 
 .navbar {
@@ -259,6 +286,7 @@ p {
 				padding: 12px;
 				border: 1px solid #6070FF;
 				border-radius: 8px;
+				cursor: pointer;
 			}
 		}
 	}
@@ -277,7 +305,7 @@ p {
 		text-transform: uppercase;
 	  }
 	&__icons {
-		margin: 1.3rem 0;
+		margin: 1.3rem 0 1rem;
 	
 		&__ul {
 		  align-items: center;
@@ -292,10 +320,47 @@ p {
 			padding: 12px;
 			border: 1px solid #6070FF;
 			border-radius: 8px;
+			cursor: pointer;
 		}
 	}
 	&__tools{
-		margin: 36px 0;
-		padding: 24px 12px;
+		margin: 6px 0;
+		padding: 24px 0;
+	}
+	&__lang{
+		&__top{
+			align-items: center;
+			justify-content: space-between;
+			padding: 23px 40px 23px 0;
+			cursor: pointer;
+			&__img{
+				transform:rotate(90deg);
+			}
+		}
+		&__bottom{
+			li{
+				align-items: center;
+				gap: 1rem;
+				border-radius: 8px;
+				margin: 12px 0;
+				padding: 9px 12px;
+			}
+		}
+	}
+	&__frameworks{
+		&__top{
+			align-items: center;
+			justify-content: space-between;
+			padding: 23px 0;
+			cursor: pointer;
+		}
+	}
+	&__skills{
+		&__top{
+			align-items: center;
+			justify-content: space-between;
+			padding: 23px 0;
+			cursor: pointer;
+		}
 	}
 }

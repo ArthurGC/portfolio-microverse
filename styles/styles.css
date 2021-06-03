@@ -23,8 +23,16 @@ p {
   background: #fff;
 }
 
+.clr-n-900 {
+  color: #000;
+}
+
 .clr-n-800 {
   color: #172b4d;
+}
+
+.clr-n-700 {
+  color: #253858;
 }
 
 .clr-n-600 {
@@ -41,6 +49,10 @@ p {
 
 .clr-p-400 {
   color: #6070ff;
+}
+
+.clr-p-300 {
+  color: #7f8cff;
 }
 
 .bg-p-50 {
@@ -172,8 +184,6 @@ p {
   color: #344563;
 }
 .head__link {
-  color: #7f8cff;
-  text-decoration: none;
   text-transform: uppercase;
 }
 .head__icons {
@@ -231,4 +241,37 @@ p {
   padding: 12px;
   border: 1px solid #6070FF;
   border-radius: 8px;
+}
+
+.about {
+  padding: 7.125rem 1.5rem;
+  border-top-right-radius: 5rem;
+}
+.about__title {
+  width: 5ch;
+}
+.about__dsc {
+  margin: 10px 0;
+}
+.about__link {
+  text-transform: uppercase;
+}
+.about__icons {
+  margin: 1.3rem 0;
+}
+.about__icons__ul {
+  align-items: center;
+  justify-content: space-between;
+  width: 11rem;
+}
+.about__btn .btn {
+  width: 162px;
+  height: 48px;
+  padding: 12px;
+  border: 1px solid #6070FF;
+  border-radius: 8px;
+}
+.about__tools {
+  margin: 36px 0;
+  padding: 24px 12px;
 }/*# sourceMappingURL=styles.css.map */

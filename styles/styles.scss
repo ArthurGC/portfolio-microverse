@@ -407,9 +407,9 @@ p {
 	content: '';
 	position: absolute;
 	background-color: $clr-primary-400;
-	background-image: url(/images/contact-background.png);
-	background-size: cover;
-	background-position: center;
+	background-image: url(/images/contact-form-shapes-mobile.svg);
+	background-size: contain;
+	background-position: right;
 	background-repeat: no-repeat;
 	border-top-left-radius: 5rem;
 	top: 0;
@@ -420,7 +420,7 @@ p {
   }
 .contact{
 	position: relative;
-	padding: 6.4375rem 1.5rem;
+	padding: 6.4375rem 1.5rem 1.5rem;
 	z-index: 10;
 	display: flex;
 	flex-direction: column;
@@ -432,6 +432,7 @@ p {
 	&__dsc{
 		color: $clr-primary-50;
 		text-align: center;
+		margin: .8rem 0 2.8rem;
 	}
 	&__container{
 		form{
@@ -441,12 +442,17 @@ p {
 					border-radius: 8px;
 					background: $clr-neutral-100;
 					border: 1px solid #cfd8dc;
+					margin: 10px 0;
+					height: 48px;
+					padding: 0 1rem;
 				}
 				textarea{
 					width: 100%;
 					border-radius: 8px;
 					background: $clr-neutral-100;
 					border: 1px solid #cfd8dc;
+					margin-top: 8px;
+					resize: none;
 				}
 				.btn{
 					width: 162px;
@@ -454,6 +460,7 @@ p {
 					padding: 12px;
 					color: #6070ff;
 					cursor: pointer;
+					margin: 18px 0;
 				}
 			}
 		}

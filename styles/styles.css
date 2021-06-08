@@ -438,6 +438,7 @@ p {
   background: #fff;
   border: 1px solid #cfd8dc;
   margin-top: 8px;
+  padding: 1rem;
   resize: none;
 }
 

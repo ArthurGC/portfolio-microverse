@@ -7,6 +7,7 @@ In this project, I set up my portfolio repository. My goal here is to set up and
 - ![screenshot](/images/mobile_preview_v1.png)
 - ![screenshot](/images/mobile_preview_v2.png)
 - ![screenshot](/images/mobile_preview_v3.png)
+- ![screenshot](/images/mobile_preview_v4.png)
 ## :hammer: Built With
 
 - HTML and CSS

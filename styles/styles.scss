@@ -422,4 +422,50 @@ p {
 	position: relative;
 	padding: 6.4375rem 1.5rem;
 	z-index: 10;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__title{
+		color: $clr-neutral-100;
+		text-align: center;
+	}
+	&__dsc{
+		color: $clr-primary-50;
+		text-align: center;
+	}
+	&__container{
+		form{
+			li{
+				input{
+					width: 100%;
+					border-radius: 8px;
+					background: $clr-neutral-100;
+					border: 1px solid #cfd8dc;
+				}
+				textarea{
+					width: 100%;
+					border-radius: 8px;
+					background: $clr-neutral-100;
+					border: 1px solid #cfd8dc;
+				}
+				.btn{
+					width: 162px;
+					height: 48px;
+					padding: 12px;
+					color: #6070ff;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+
 }
+
+
+
+
+
+
+
+
+

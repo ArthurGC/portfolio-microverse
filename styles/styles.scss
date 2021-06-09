@@ -551,4 +551,30 @@ p {
 			padding: 2.5rem;
 		}
 	}
+
+	.about{
+		padding: 7.125rem;
+		flex-direction: row;
+		column-gap: 37px;
+		&__myself{
+			flex-basis: 37rem;
+		}
+		&__tools{
+			flex-basis: 38rem;
+			li:not(:first-child) {
+				border-bottom: 1px solid #dfe1e6;
+			}
+		}
+		&__lang {
+			&__bottom {
+				display: flex;
+				column-gap: 12px;
+				li {
+					flex-direction: column;
+					align-items: flex-start;
+					flex-basis: 7.6rem;
+				}
+			}
+		}
+	}
 }

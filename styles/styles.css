@@ -484,4 +484,30 @@ p {
     flex-direction: row-reverse;
     padding: 2.5rem;
   }
+
+  .about {
+    padding: 7.125rem;
+    flex-direction: row;
+    -moz-column-gap: 37px;
+         column-gap: 37px;
+  }
+  .about__myself {
+    flex-basis: 37rem;
+  }
+  .about__tools {
+    flex-basis: 38rem;
+  }
+  .about__tools li:not(:first-child) {
+    border-bottom: 1px solid #dfe1e6;
+  }
+  .about__lang__bottom {
+    display: flex;
+    -moz-column-gap: 12px;
+         column-gap: 12px;
+  }
+  .about__lang__bottom li {
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 7.6rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -455,4 +455,24 @@ p {
   .head {
     padding: 17rem 16.25rem;
   }
+
+  .works__cards {
+    padding: 8.8rem;
+  }
+  .works__card {
+    width: 1104px;
+    max-width: 1104px;
+    padding: 1.5rem;
+    -moz-column-gap: 46px;
+         column-gap: 46px;
+  }
+  .works__card__img {
+    width: 65%;
+  }
+  .works__card:nth-child(1), .works__card:nth-child(3) {
+    flex-direction: row;
+  }
+  .works__card:nth-child(2), .works__card:nth-child(4) {
+    flex-direction: row-reverse;
+  }
 }/*# sourceMappingURL=styles.css.map */

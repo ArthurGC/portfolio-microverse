@@ -295,12 +295,14 @@ p {
     }
 
     &__topics {
-      margin: 1rem 0 1.8rem;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+      	margin: 1rem 0 1.8rem;
 
       &__text {
         padding: 4px 12px;
         border-radius: 8px;
-        margin-right: 8px;
       }
     }
 

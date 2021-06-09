@@ -275,12 +275,14 @@ p {
   margin-right: 2rem;
 }
 .works__card__topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
   margin: 1rem 0 1.8rem;
 }
 .works__card__topics__text {
   padding: 4px 12px;
   border-radius: 8px;
-  margin-right: 8px;
 }
 .works__card__btn .btn {
   width: 124px;

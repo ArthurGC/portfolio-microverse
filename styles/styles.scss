@@ -214,6 +214,7 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-origin: content-box;
   border-bottom-left-radius: 5rem;
   top: 0;
   left: 0;
@@ -472,4 +473,8 @@ p {
       }
     }
   }
+}
+
+@media (min-width: 1440px) {
+	
 }

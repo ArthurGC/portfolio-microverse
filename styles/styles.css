@@ -433,6 +433,20 @@ p {
     line-height: 28px;
   }
 
+  .navbar {
+    padding: 1.5rem 9.68rem;
+  }
+  .navbar__menu {
+    display: flex;
+    align-items: center;
+  }
+  .navbar__menu__li {
+    margin: 0 16px;
+  }
+  .navbar__hamb {
+    display: none;
+  }
+
   .head::before {
     background-image: url(../images/desktop/headline-background.svg);
     padding: 6rem;

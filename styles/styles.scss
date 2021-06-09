@@ -476,5 +476,28 @@ p {
 }
 
 @media (min-width: 1440px) {
-	
+	.fz-40{
+		font-size: 48px;
+	}
+
+	.fz-16{
+		font-size: 20px;
+	}
+
+	.lh-52{
+		line-height: 60px;
+	}
+
+	.lh-24{
+		line-height: 28px;
+	}
+
+	.head::before {
+		background-image: url(../images/desktop/headline-background.svg);
+		padding: 6rem;
+	}
+	.head{
+		padding: 17rem 16.25rem;
+
+	}
 }

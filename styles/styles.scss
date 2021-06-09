@@ -484,6 +484,14 @@ p {
 		font-size: 20px;
 	}
 
+	.fz-15{
+		font-size: 16px;
+	}
+
+	.fz-13{
+		font-size: 18px;
+	}
+
 	.lh-52{
 		line-height: 60px;
 	}
@@ -524,7 +532,6 @@ p {
 		&__card {
 			width: 1104px;
 			max-width: 1104px;
-			padding: 1.5rem;
 			column-gap: 46px;
 
 			&__img {
@@ -535,11 +542,13 @@ p {
 		&__card:nth-child(1),
 		&__card:nth-child(3) {
 			flex-direction: row;
+			padding: 1.5rem;
 		}
 
 		&__card:nth-child(2),
 		&__card:nth-child(4) {
 			flex-direction: row-reverse;
+			padding: 2.5rem;
 		}
 	}
 }

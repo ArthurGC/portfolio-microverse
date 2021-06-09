@@ -425,6 +425,14 @@ p {
     font-size: 20px;
   }
 
+  .fz-15 {
+    font-size: 16px;
+  }
+
+  .fz-13 {
+    font-size: 18px;
+  }
+
   .lh-52 {
     line-height: 60px;
   }
@@ -462,7 +470,6 @@ p {
   .works__card {
     width: 1104px;
     max-width: 1104px;
-    padding: 1.5rem;
     -moz-column-gap: 46px;
          column-gap: 46px;
   }
@@ -471,8 +478,10 @@ p {
   }
   .works__card:nth-child(1), .works__card:nth-child(3) {
     flex-direction: row;
+    padding: 1.5rem;
   }
   .works__card:nth-child(2), .works__card:nth-child(4) {
     flex-direction: row-reverse;
+    padding: 2.5rem;
   }
 }/*# sourceMappingURL=styles.css.map */

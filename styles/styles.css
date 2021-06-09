@@ -363,6 +363,7 @@ p {
   background-image: url("https://raw.githubusercontent.com/ArthurGC/portfolio-microverse/c8dcf1476c30337e684a9325358fe7f2b7410486/images/contact-form-shapes-mobile.svg");
   background-size: contain;
   background-position: right;
+  background-origin: content-box;
   background-repeat: no-repeat;
   border-top-left-radius: 5rem;
   top: 0;
@@ -509,5 +510,30 @@ p {
     flex-direction: column;
     align-items: flex-start;
     flex-basis: 7.6rem;
+  }
+
+  .contact::before {
+    background-image: url(../images/desktop/contact-form-background.svg);
+    padding: 3.5rem;
+  }
+
+  .contact {
+    padding: 8.875rem;
+    padding-bottom: 7.9rem;
+  }
+  .contact__dsc {
+    max-width: 570px;
+  }
+  .contact__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact__container form li input,
+.contact__container form li textarea {
+    max-width: 447px;
+  }
+  .contact__container form li:last-child {
+    text-align: center;
   }
 }/*# sourceMappingURL=styles.css.map */

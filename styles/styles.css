@@ -459,6 +459,7 @@ p {
   .head::before {
     background-image: url(../images/desktop/headline-background.svg);
     padding: 6rem;
+    border-bottom-left-radius: 8rem;
   }
 
   .head {
@@ -474,8 +475,8 @@ p {
     -moz-column-gap: 46px;
          column-gap: 46px;
   }
-  .works__card__img {
-    width: 65%;
+  .works__card > * {
+    flex-basis: 50%;
   }
   .works__card:nth-child(1), .works__card:nth-child(3) {
     flex-direction: row;
@@ -491,6 +492,7 @@ p {
     flex-direction: row;
     -moz-column-gap: 37px;
          column-gap: 37px;
+    border-top-right-radius: 8rem;
   }
   .about__myself {
     flex-basis: 37rem;
@@ -515,11 +517,13 @@ p {
   .contact::before {
     background-image: url(../images/desktop/contact-form-background.svg);
     padding: 3.5rem;
+    border-top-left-radius: 8rem;
   }
 
   .contact {
     padding: 8.875rem;
     padding-bottom: 7.9rem;
+    background: #fff;
   }
   .contact__dsc {
     max-width: 570px;

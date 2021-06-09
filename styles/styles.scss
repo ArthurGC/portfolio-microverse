@@ -520,6 +520,7 @@ p {
 	.head::before {
 		background-image: url(../images/desktop/headline-background.svg);
 		padding: 6rem;
+		border-bottom-left-radius: 8rem;
 	}
 	.head{
 		padding: 17rem 16.25rem;
@@ -534,10 +535,10 @@ p {
 			width: 1104px;
 			max-width: 1104px;
 			column-gap: 46px;
-
-			&__img {
-				width: 65%;
-			  }
+			
+			& > * {
+				flex-basis: 50%;
+			}
 		}
 
 		&__card:nth-child(1),
@@ -557,6 +558,7 @@ p {
 		padding: 7.125rem;
 		flex-direction: row;
 		column-gap: 37px;
+		border-top-right-radius: 8rem;
 		&__myself{
 			flex-basis: 37rem;
 		}
@@ -581,11 +583,13 @@ p {
 	.contact::before {
 		background-image: url(../images/desktop/contact-form-background.svg);
 		padding: 3.5rem;
+		border-top-left-radius: 8rem;
 	}
 
 	.contact {
 		padding: 8.875rem;
 		padding-bottom: 7.9rem;
+		background: $clr-neutral-100;
 		&__dsc {
 			max-width: 570px;
 		}

@@ -2,7 +2,7 @@
 
 # Portfolio Project
 
-In this project, I set up my portfolio repository. My goal here is to set up and customize the first sections of my portfolio.
+In this project, I set up my portfolio repository. My goal here is to set up and customize my portfolio for mobile and desktop versions.
 
 - ![screenshot](/images/mobile_preview_v1.png)
 - ![screenshot](/images/mobile_preview_v2.png)

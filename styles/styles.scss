@@ -251,12 +251,9 @@ p {
 
   &__icons {
     margin: 0.5rem 0;
-
-    &__ul {
-      align-items: center;
-      justify-content: space-between;
-      width: 11rem;
-    }
+    align-items: center;
+    justify-content: space-between;
+    width: 11rem;
   }
 }
 
@@ -278,10 +275,6 @@ p {
 
     &__img {
       width: 100%;
-
-      img {
-        width: 100%;
-      }
     }
 
     &__subtitle {
@@ -343,25 +336,20 @@ p {
     text-transform: uppercase;
   }
 
-  &__icons {
+  &__icons__ul {
     margin: 1.3rem 0 1rem;
-
-    &__ul {
-      align-items: center;
-      justify-content: space-between;
-      width: 11rem;
-    }
+    align-items: center;
+    justify-content: space-between;
+    width: 11rem;
   }
 
-  &__btn {
-    .btn {
-      width: 162px;
-      height: 48px;
-      padding: 12px;
-      border: 1px solid #6070ff;
-      border-radius: 8px;
-      cursor: pointer;
-    }
+  .btn {
+    width: 162px;
+    height: 48px;
+    padding: 12px;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    cursor: pointer;
   }
 
   &__tools {

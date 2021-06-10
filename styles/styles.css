@@ -260,9 +260,6 @@ p {
 .works__card__img {
   width: 100%;
 }
-.works__card__img img {
-  width: 100%;
-}
 .works__card__subtitle {
   align-items: center;
   -moz-column-gap: 2rem;

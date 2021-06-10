@@ -336,14 +336,11 @@ p {
     text-transform: uppercase;
   }
 
-  &__icons {
-    margin: 1.3rem 0 1rem;
-
-    &__ul {
+  &__icons__ul {
+      margin: 1.3rem 0 1rem;
       align-items: center;
       justify-content: space-between;
       width: 11rem;
-    }
   }
 
   &__btn {

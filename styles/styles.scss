@@ -214,6 +214,7 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-origin: content-box;
   border-bottom-left-radius: 5rem;
   top: 0;
   left: 0;
@@ -232,6 +233,11 @@ p {
   &__title {
     color: $clr-neutral-800;
     width: 10ch;
+
+    span {
+      display: block;
+      width: 10ch;
+    }
   }
 
   &__dsc {
@@ -294,12 +300,14 @@ p {
     }
 
     &__topics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
       margin: 1rem 0 1.8rem;
 
       &__text {
         padding: 4px 12px;
         border-radius: 8px;
-        margin-right: 8px;
       }
     }
 
@@ -385,6 +393,8 @@ p {
   }
 
   &__frameworks {
+    border-bottom: 1px solid #dfe1e6;
+
     &__top {
       align-items: center;
       justify-content: space-between;
@@ -394,6 +404,8 @@ p {
   }
 
   &__skills {
+    border-bottom: 1px solid #dfe1e6;
+
     &__top {
       align-items: center;
       justify-content: space-between;
@@ -410,6 +422,7 @@ p {
   background-image: url('https://raw.githubusercontent.com/ArthurGC/portfolio-microverse/c8dcf1476c30337e684a9325358fe7f2b7410486/images/contact-form-shapes-mobile.svg');
   background-size: contain;
   background-position: right;
+  background-origin: content-box;
   background-repeat: no-repeat;
   border-top-left-radius: 5rem;
   top: 0;
@@ -471,5 +484,199 @@ p {
         }
       }
     }
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    padding: 1.5rem 8rem;
+
+    &__menu {
+      display: flex;
+      align-items: center;
+
+      &__li {
+        margin: 0 16px;
+      }
+    }
+
+    &__hamb {
+      display: none;
+    }
+  }
+
+  .head::before {
+    background-image: url(../images/desktop/headline-background.svg);
+    padding: 6rem;
+    border-bottom-left-radius: 8rem;
+  }
+
+  .head {
+    padding: 10rem;
+    padding-right: 15rem;
+
+    &__title {
+      span {
+        width: 15ch;
+      }
+    }
+
+    &__link {
+      margin: 0.7rem 0;
+    }
+  }
+
+  .works {
+    &__cards {
+      padding: 5rem;
+    }
+
+    &__card {
+      max-width: 1104px;
+      column-gap: 46px;
+      padding: 1.5rem;
+
+      &__text {
+        padding: 1rem;
+      }
+
+      & > * {
+        flex-basis: 50%;
+      }
+    }
+
+    &__card:nth-child(1),
+    &__card:nth-child(3) {
+      flex-direction: row;
+    }
+
+    &__card:nth-child(2),
+    &__card:nth-child(4) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .about {
+    padding: 6rem;
+    flex-direction: row;
+    column-gap: 37px;
+    border-top-right-radius: 8rem;
+
+    &__myself {
+      flex-basis: 25rem;
+    }
+
+    &__lang {
+      &__bottom {
+        display: flex;
+        column-gap: 12px;
+
+        li {
+          flex-direction: column;
+          align-items: flex-start;
+          flex-basis: 7.6rem;
+        }
+      }
+    }
+
+    &__tools {
+      flex-basis: 25rem;
+    }
+  }
+
+  .contact::before {
+    background-image: url(../images/desktop/contact-form-background.svg);
+    padding: 1rem;
+    border-top-left-radius: 8rem;
+  }
+
+  .contact {
+    padding: 6rem 8.875rem;
+    background: $clr-neutral-100;
+
+    &__dsc {
+      max-width: 570px;
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      form {
+        li {
+          input,
+          textarea {
+            max-width: 447px;
+          }
+        }
+
+        li:last-child {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .fz-40 {
+    font-size: 48px;
+  }
+
+  .fz-16 {
+    font-size: 20px;
+  }
+
+  .fz-15 {
+    font-size: 16px;
+  }
+
+  .fz-13 {
+    font-size: 18px;
+  }
+
+  .lh-52 {
+    line-height: 60px;
+  }
+
+  .lh-24 {
+    line-height: 28px;
+  }
+
+  .navbar {
+    padding: 1.5rem 9.68rem;
+  }
+
+  .head {
+    padding: 17rem 16.25rem;
+    padding-right: 18vw;
+  }
+
+  .works {
+    &__cards {
+      padding: 8.8rem;
+    }
+  }
+
+  .about {
+    padding: 7.125rem;
+
+    &__myself {
+      flex-basis: 37rem;
+    }
+
+    &__tools {
+      flex-basis: 38rem;
+    }
+  }
+
+  .contact::before {
+    padding: 3.5rem;
+  }
+
+  .contact {
+    padding: 8.875rem;
+    padding-bottom: 7.9rem;
   }
 }

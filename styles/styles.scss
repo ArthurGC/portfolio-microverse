@@ -686,14 +686,14 @@ p {
   }
 }
 
-// .about__icons__link {
-//   img {
-//     transition: transform .5s;
-//     &:hover {
-//       transform: scale(1.5);
-//     }
-//   }
-// }
+.about__icons__link {
+  img {
+    transition: transform .5s;
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+}
 
 // .navbar__link {
 //   animation-name: rotate-logo;

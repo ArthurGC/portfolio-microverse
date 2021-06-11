@@ -669,13 +669,13 @@ p {
   }
 }
 
-// .navbar__menu__link {
-//    transition: color .5s ease-in-out, font-size .5s ease-in-out;
-// }
-// .navbar__menu__link:hover {
-//     color: $clr-primary-500;
-//     font-size: 17px;
-// }
+ .navbar__menu__link {
+   transition: color .5s ease-in-out, font-size .5s ease-in-out;
+}
+.navbar__menu__link:hover {
+    color: $clr-primary-500;
+    font-size: 17px;
+}
 
 // .head__icons__link {
 //   img {

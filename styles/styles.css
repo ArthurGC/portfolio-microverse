@@ -666,11 +666,11 @@ p {
   transition: transform 0.5s;
 }
 
-.head__icons__link:hover {
+.head__icons__link img:hover {
   transform: scale(1.5);
 }
 
-.about__icons__link:hover {
+.about__icons__link img:hover {
   transform: scale(1.5);
 }
 

@@ -582,4 +582,35 @@ p {
     padding: 8.875rem;
     padding-bottom: 7.9rem;
   }
+}
+.navbar__menu__link {
+  transition: color 0.5s ease-in-out, font-size 0.5s ease-in-out;
+}
+
+.navbar__menu__link:hover {
+  color: #396df2;
+  font-size: 17px;
+}
+
+.head__icons__link img {
+  transition: transform 0.5s;
+}
+.head__icons__link img:hover {
+  transform: scale(1.5);
+}
+
+.about__icons__link img {
+  transition: transform 0.5s;
+}
+.about__icons__link img:hover {
+  transform: scale(1.5);
+}
+
+.navbar__link {
+  -webkit-animation-name: rotate-logo;
+          animation-name: rotate-logo;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }/*# sourceMappingURL=styles.css.map */

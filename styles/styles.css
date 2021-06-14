@@ -506,6 +506,7 @@ p {
   }
 
   .works__card {
+    align-items: center;
     max-width: 1104px;
     -moz-column-gap: 46px;
     column-gap: 46px;
@@ -516,8 +517,8 @@ p {
     padding: 1rem;
   }
 
-  .works__card > * {
-    flex-basis: 50%;
+  .works__card__img {
+    width: 50%;
   }
 
   .works__card:nth-child(1),

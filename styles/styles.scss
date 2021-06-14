@@ -523,6 +523,7 @@ p {
     }
 
     &__card {
+      align-items: center;
       max-width: 1104px;
       column-gap: 46px;
       padding: 1.5rem;
@@ -531,8 +532,8 @@ p {
         padding: 1rem;
       }
 
-      & > * {
-        flex-basis: 50%;
+      &__img {
+        width: 50%;
       }
     }
 

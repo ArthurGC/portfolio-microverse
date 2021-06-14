@@ -2,7 +2,7 @@
 
 # Portfolio Project
 
-In this project, I set up my portfolio repository. My goal here is to set up and customize my portfolio for mobile and desktop versions.
+In this project, I set up my portfolio repository. My goal here was to set up and customize my portfolio for mobile and desktop versions.
 
 - ![screenshot](/images/mobile_preview_v1.png)
 - ![screenshot](/images/mobile_preview_v2.png)
@@ -14,7 +14,7 @@ In this project, I set up my portfolio repository. My goal here is to set up and
 
 ## :red_circle: Live Demo
 
-[Live Demo Link](https://arthurgc.github.io/portfolio-microverse/)
+[Live Preview Link](https://arthurgc.github.io/portfolio-microverse/)
 
 ## :blue_book: Learning Objectives
 

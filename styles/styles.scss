@@ -455,6 +455,11 @@ p {
           padding: 0 1rem;
         }
 
+        label {
+          display: block;
+          color: $clr-neutral-100;
+        }
+
         textarea {
           width: 100%;
           border-radius: 8px;

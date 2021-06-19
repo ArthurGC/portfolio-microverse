@@ -191,7 +191,7 @@ p {
 }
 
 .navbar__link {
-  color: #6070ff;
+  color: #2230d2;
   -webkit-animation-name: rotate-logo;
   animation-name: rotate-logo;
   -webkit-animation-duration: 1.5s;
@@ -443,6 +443,11 @@ p {
   margin: 10px 0;
   height: 48px;
   padding: 0 1rem;
+}
+
+.contact__container form li label {
+  display: block;
+  color: #fff;
 }
 
 .contact__container form li textarea {

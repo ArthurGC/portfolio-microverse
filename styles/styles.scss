@@ -194,7 +194,7 @@ p {
   justify-content: space-between;
 
   &__link {
-    color: $clr-primary-400;
+    color: $clr-primary-700;
     animation-name: rotate-logo;
     animation-duration: 1.5s;
     animation-iteration-count: 1;
@@ -453,6 +453,11 @@ p {
           margin: 10px 0;
           height: 48px;
           padding: 0 1rem;
+        }
+
+        label {
+          display: block;
+          color: $clr-neutral-100;
         }
 
         textarea {

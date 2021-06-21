@@ -464,7 +464,7 @@ body {
     background: rgba(96, 112, 255, 0.95);
     display: flex;
     top: 0;
-    left: 0;
+    left: 100%;
     transition: left 0.8s, visibility 0.8s, opacity 0.4s;
     padding: 8rem 2rem;
     z-index: 50;

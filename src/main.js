@@ -25,29 +25,29 @@ const projectFeature = document.querySelector('.project-feature');
 const projectBack = document.querySelector('.project-background');
 const projectYear = document.querySelector('.project-year');
 const projectImage = document.querySelector('.project-image');
-const projectDescription = document.querySelector('.project-description');
-const projectTool1 = document.querySelector('.project-tool1');
-const projectTool2 = document.querySelector('.project-tool2');
-const projectTool3 = document.querySelector('.project-tool3');
-const projectLinkLive = document.querySelector('.project-linkLive');
-const projectLinkSource = document.querySelector('.project-linkSource');
+// const projectDescription = document.querySelector('.project-description');
+// const projectTool1 = document.querySelector('.project-tool1');
+// const projectTool2 = document.querySelector('.project-tool2');
+// const projectTool3 = document.querySelector('.project-tool3');
+// const projectLinkLive = document.querySelector('.project-linkLive');
+// const projectLinkSource = document.querySelector('.project-linkSource');
 
-const openModal = (btn) => {
-  let button = btn.path[0];
-  projectName.textContent = `${projects[button.id].name}`;
-  projectFeature.textContent = `${projects[button.id].feature}`;
-  projectBack.textContent = `${projects[button.id].background}`;
-  projectYear.textContent = `${projects[button.id].year}`;
-  projectImage.setAttribute('src', `${projects[button.id].image}`);
-  projectDescription.textContent = `${projects[button.id].description}`;
-  projectTool1.textContent = `${projects[button.id].tool1}`;
-  projectTool2.textContent = `${projects[button.id].tool2}`;
-  projectTool3.textContent = `${projects[button.id].tool3}`;
-  projectLinkLive.setAttribute('src', `${projects[button.id].linkLive}`);
-  projectLinkSource.setAttribute('src', `${projects[button.id].linkSource}`);
-  modal.classList.add('active');
-  backgroundModal.classList.add('active');
-}
+// const openModal = (btn) => {
+//   let button = btn.path[0];
+//   projectName.textContent = `${projects[button.id].name}`;
+//   projectFeature.textContent = `${projects[button.id].feature}`;
+//   projectBack.textContent = `${projects[button.id].background}`;
+//   projectYear.textContent = `${projects[button.id].year}`;
+//   projectImage.setAttribute('src', `${projects[button.id].image}`);
+//   projectDescription.textContent = `${projects[button.id].description}`;
+//   projectTool1.textContent = `${projects[button.id].tool1}`;
+//   projectTool2.textContent = `${projects[button.id].tool2}`;
+//   projectTool3.textContent = `${projects[button.id].tool3}`;
+//   projectLinkLive.setAttribute('src', `${projects[button.id].linkLive}`);
+//   projectLinkSource.setAttribute('src', `${projects[button.id].linkSource}`);
+//   modal.classList.add('active');
+//   backgroundModal.classList.add('active');
+// }
 
 const closeModal = () => {
   modal.classList.remove('active');
@@ -56,10 +56,10 @@ const closeModal = () => {
 
 // });
 
-firstButtonProject.addEventListener('click',openModal);
-secondButtonProject.addEventListener('click',openModal);
-thirdButtonProject.addEventListener('click',openModal);
-fourthButtonProject.addEventListener('click',openModal);
+// firstButtonProject.addEventListener('click',openModal);
+// secondButtonProject.addEventListener('click',openModal);
+// thirdButtonProject.addEventListener('click',openModal);
+// fourthButtonProject.addEventListener('click',openModal);
 
 closeIcon.addEventListener('click',closeModal);
 

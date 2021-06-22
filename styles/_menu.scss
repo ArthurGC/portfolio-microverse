@@ -4,11 +4,18 @@
   .navbar__menu {
     visibility: hidden;
     opacity: 0;
+<<<<<<< HEAD
+=======
+    position: absolute;
+>>>>>>> origin/main
     width: 100%;
     height: 100vh;
     background: rgba($color: $clr-primary-400, $alpha: 0.95);
     display: flex;
+<<<<<<< HEAD
     position: fixed;
+=======
+>>>>>>> origin/main
     top: 0;
     left: 100%;
     transition: left 0.8s, visibility 0.8s, opacity 0.4s;

@@ -13,8 +13,7 @@
     animation-iteration-count: 1;
   }
 
-  &__hamb,
-  &__close {
+  &__hamb {
     cursor: pointer;
     z-index: 100;
   }

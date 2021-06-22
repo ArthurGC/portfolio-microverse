@@ -56,10 +56,10 @@ const closeModal = () => {
 
 // });
 
-// firstButtonProject.addEventListener('click',openModal);
-// secondButtonProject.addEventListener('click',openModal);
-// thirdButtonProject.addEventListener('click',openModal);
-// fourthButtonProject.addEventListener('click',openModal);
+firstButtonProject.addEventListener('click',openModal);
+secondButtonProject.addEventListener('click',openModal);
+thirdButtonProject.addEventListener('click',openModal);
+fourthButtonProject.addEventListener('click',openModal);
 
 closeIcon.addEventListener('click',closeModal);
 

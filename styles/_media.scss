@@ -1,5 +1,18 @@
 @use 'variables' as *;
 
+@media (min-width: 570px) {
+  .modal {
+    margin: 3rem 0;
+    width: 70%;
+  }
+}
+
+@media (min-width: 800px) {
+  .modal {
+    width: 60%;
+  }
+}
+
 @media (min-width: 992px) {
   .navbar {
     padding: 1.5rem 8rem;
@@ -131,6 +144,32 @@
       }
     }
   }
+
+  .modal {
+    width: 70%;
+
+    .image-project {
+      margin-inline: auto;
+      width: 70%;
+    }
+
+    &__image {
+      width: 100%;
+    }
+
+    &__dsc {
+      flex-direction: row;
+      gap: 2rem;
+
+      &__first {
+        flex-basis: 60%;
+      }
+
+      &__second {
+        flex-basis: 40%;
+      }
+    }
+  }
 }
 
 @media (min-width: 1440px) {
@@ -192,5 +231,14 @@
   .contact {
     padding: 8.875rem;
     padding-bottom: 7.9rem;
+  }
+
+  .modal {
+    width: 60%;
+
+    .image-project {
+      margin-inline: auto;
+      width: 65%;
+    }
   }
 }

@@ -2,6 +2,7 @@
 
 .hero {
   background: $clr-neutral-300;
+  position: relative;
 }
 
 .bg-white {
@@ -157,4 +158,8 @@
       0 8px 16px rgba(64, 83, 252, 0.24);
     color: #fff;
   }
+}
+
+.hidden {
+  transform: scale(0);
 }

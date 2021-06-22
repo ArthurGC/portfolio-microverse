@@ -1,5 +1,5 @@
 // Mobile menu functionality
-import { menuIconMobile, menuLinks, openMenu, closeMenu} from "./menu.js";
+import { menuIconMobile, menuLinks, openMenu, closeMenu} from "./menu";
 
 menuIconMobile.addEventListener('click', openMenu);
 menuLinks.forEach((menuLink) => {
@@ -7,9 +7,11 @@ menuLinks.forEach((menuLink) => {
 });
 
 // Popup window functionality
-import {createModal, projects} from "./popup.js";
+import {createModal, projects} from "./popup";
 
-// document.addEventListener("DOMContentLoaded", () => {
+//Event that detect when the page loads
+document.addEventListener("DOMContentLoaded", () => {
+
   createModal();
 
 
@@ -43,8 +45,8 @@ const openModal = (btn) => {
   projectTool1.textContent = `${projects[button.id].tool1}`;
   projectTool2.textContent = `${projects[button.id].tool2}`;
   projectTool3.textContent = `${projects[button.id].tool3}`;
-  projectLinkLive.setAttribute('src', `${projects[button.id].linkLive}`);
-  projectLinkSource.setAttribute('src', `${projects[button.id].linkSource}`);
+  projectLinkLive.setAttribute('href', `${projects[button.id].linkLive}`);
+  projectLinkSource.setAttribute('href', `${projects[button.id].linkSource}`);
   modal.classList.add('active');
   backgroundModal.classList.add('active');
 }
@@ -54,7 +56,7 @@ const closeModal = () => {
   backgroundModal.classList.remove('active');
 }
 
-// });
+
 
 firstButtonProject.addEventListener('click',openModal);
 secondButtonProject.addEventListener('click',openModal);
@@ -63,3 +65,4 @@ fourthButtonProject.addEventListener('click',openModal);
 
 closeIcon.addEventListener('click',closeModal);
 
+});

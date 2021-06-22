@@ -79,7 +79,7 @@ export function createModal() {
 						</li>
 					  </ul>
 			</div>
-			<img class='modal__image project-image' src='' alt='project image'></img>
+			<div class='image-project'><img class='modal__image project-image' src='' alt='project image'></img></div>
 			<ul class='modal__dsc ul flex'>
 			  <li class='modal__dsc__first'><p class='project-description fw-400 fz-15 lh-24 clr-n-600'></p></li>
 			  <li class="modal__dsc__second flex">

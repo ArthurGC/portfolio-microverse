@@ -1,5 +1,5 @@
 // Mobile menu functionality
-import { menuIconMobile, menuLinks } from "./menu";
+import { menuIconMobile, menuLinks, openMenu, closeMenu} from "./menu.js";
 
 menuIconMobile.addEventListener('click', openMenu);
 menuLinks.forEach((menuLink) => {

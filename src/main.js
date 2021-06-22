@@ -32,22 +32,22 @@ const projectTool3 = document.querySelector('.project-tool3');
 const projectLinkLive = document.querySelector('.project-linkLive');
 const projectLinkSource = document.querySelector('.project-linkSource');
 
-// const openModal = (btn) => {
-//   let button = btn.path[0];
-//   projectName.textContent = `${projects[button.id].name}`;
-//   projectFeature.textContent = `${projects[button.id].feature}`;
-//   projectBack.textContent = `${projects[button.id].background}`;
-//   projectYear.textContent = `${projects[button.id].year}`;
-//   projectImage.setAttribute('src', `${projects[button.id].image}`);
-//   projectDescription.textContent = `${projects[button.id].description}`;
-//   projectTool1.textContent = `${projects[button.id].tool1}`;
-//   projectTool2.textContent = `${projects[button.id].tool2}`;
-//   projectTool3.textContent = `${projects[button.id].tool3}`;
-//   projectLinkLive.setAttribute('src', `${projects[button.id].linkLive}`);
-//   projectLinkSource.setAttribute('src', `${projects[button.id].linkSource}`);
-//   modal.classList.add('active');
-//   backgroundModal.classList.add('active');
-// }
+const openModal = (btn) => {
+  let button = btn.path[0];
+  projectName.textContent = `${projects[button.id].name}`;
+  projectFeature.textContent = `${projects[button.id].feature}`;
+  projectBack.textContent = `${projects[button.id].background}`;
+  projectYear.textContent = `${projects[button.id].year}`;
+  projectImage.setAttribute('src', `${projects[button.id].image}`);
+  projectDescription.textContent = `${projects[button.id].description}`;
+  projectTool1.textContent = `${projects[button.id].tool1}`;
+  projectTool2.textContent = `${projects[button.id].tool2}`;
+  projectTool3.textContent = `${projects[button.id].tool3}`;
+  projectLinkLive.setAttribute('src', `${projects[button.id].linkLive}`);
+  projectLinkSource.setAttribute('src', `${projects[button.id].linkSource}`);
+  modal.classList.add('active');
+  backgroundModal.classList.add('active');
+}
 
 const closeModal = () => {
   modal.classList.remove('active');

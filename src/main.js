@@ -11,7 +11,7 @@ menuLinks.forEach((menuLink) => {
   menuLink.addEventListener('click', closeMenu);
 });
 
-// Event that detect when the page loads
+// Event that detects when the page loads
 document.addEventListener('DOMContentLoaded', () => {
   createModal();
 

@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
   createModal();
 
   const buttonsProject = document.querySelectorAll('.works__card button');
-  console.log(buttonsProject);
   const closeIcon = document.querySelector('.closeModal');
   const modal = document.querySelector('.modal');
   const backgroundModal = document.querySelector('.overlay');
@@ -32,31 +31,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const projectLinkLive = document.querySelector('.project-linkLive');
   const projectLinkSource = document.querySelector('.project-linkSource');
 
-  const openModal = (btn) => {
-    const button = btn.path[0];
-    projectName.textContent = `${projects[button.id].name}`;
-    projectFeature.textContent = `${projects[button.id].feature}`;
-    projectBack.textContent = `${projects[button.id].background}`;
-    projectYear.textContent = `${projects[button.id].year}`;
-    projectImage.setAttribute('src', `${projects[button.id].image}`);
-    projectDescription.textContent = `${projects[button.id].description}`;
-    projectTool1.textContent = `${projects[button.id].tool1}`;
-    projectTool2.textContent = `${projects[button.id].tool2}`;
-    projectTool3.textContent = `${projects[button.id].tool3}`;
-    projectLinkLive.setAttribute('href', `${projects[button.id].linkLive}`);
-    projectLinkSource.setAttribute('href', `${projects[button.id].linkSource}`);
-    modal.classList.add('active');
-    backgroundModal.classList.add('active');
-  };
-
   const closeModal = () => {
     modal.classList.remove('active');
     backgroundModal.classList.remove('active');
   };
 
-  buttonsProject.forEach(button => {
+  buttonsProject.forEach((button) => {
     button.addEventListener('click', () => {
-      if (button.id == 0) {
+      if (button.id === '0') {
         projectName.textContent = `${projects[button.id].name}`;
         projectFeature.textContent = `${projects[button.id].feature}`;
         projectBack.textContent = `${projects[button.id].background}`;
@@ -70,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         projectLinkSource.setAttribute('href', `${projects[button.id].linkSource}`);
         modal.classList.add('active');
         backgroundModal.classList.add('active');
-      }else if (button.id == 1) {
+      } else if (button.id === '1') {
         projectName.textContent = `${projects[button.id].name}`;
         projectFeature.textContent = `${projects[button.id].feature}`;
         projectBack.textContent = `${projects[button.id].background}`;
@@ -84,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
         projectLinkSource.setAttribute('href', `${projects[button.id].linkSource}`);
         modal.classList.add('active');
         backgroundModal.classList.add('active');
-      }else if (button.id == 2) {
+      } else if (button.id === '2') {
         projectName.textContent = `${projects[button.id].name}`;
         projectFeature.textContent = `${projects[button.id].feature}`;
         projectBack.textContent = `${projects[button.id].background}`;
@@ -98,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
         projectLinkSource.setAttribute('href', `${projects[button.id].linkSource}`);
         modal.classList.add('active');
         backgroundModal.classList.add('active');
-      }else if (button.id == 3) {
+      } else if (button.id === '3') {
         projectName.textContent = `${projects[button.id].name}`;
         projectFeature.textContent = `${projects[button.id].feature}`;
         projectBack.textContent = `${projects[button.id].background}`;
@@ -113,8 +95,8 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.classList.add('active');
         backgroundModal.classList.add('active');
       }
-    })
-  })
+    });
+  });
 
   closeIcon.addEventListener('click', closeModal);
 });

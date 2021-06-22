@@ -23,8 +23,8 @@ export const projects = [
 		tool1: 'html',
 		tool2: 'css',
 		tool3: 'javascript',
-		linkLive: 'https://arthurgc.github.io/loopstudios-landing-page/',
-		linkSource: 'https://github.com/ArthurGC/loopstudios-landing-page',
+		linkLive: 'https://arthurgc.github.io/crowdfunding-product-page/',
+		linkSource: 'https://github.com/ArthurGC/crowdfunding-product-page',
 
 	},
 	{
@@ -37,8 +37,8 @@ export const projects = [
 		tool1: 'html',
 		tool2: 'css',
 		tool3: 'javascript',
-		linkLive: 'https://arthurgc.github.io/loopstudios-landing-page/',
-		linkSource: 'https://github.com/ArthurGC/loopstudios-landing-page',
+		linkLive: 'https://arthurgc.github.io/rock_paper_scissors/',
+		linkSource: 'https://github.com/ArthurGC/rock_paper_scissors',
 
 	},
 	{
@@ -51,8 +51,8 @@ export const projects = [
 		tool1: 'html',
 		tool2: 'css',
 		tool3: 'javascript',
-		linkLive: 'https://arthurgc.github.io/loopstudios-landing-page/',
-		linkSource: 'https://github.com/ArthurGC/loopstudios-landing-page',
+		linkLive: 'https://github.com/ArthurGC/portfolio',
+		linkSource: 'https://arthurgc.github.io/portfolio/',
 
 	}
 ]

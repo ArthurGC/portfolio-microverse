@@ -12,11 +12,10 @@ export const error = document.querySelector('.error');
 //     return true;
 // }
 
-// By daniel
-// export function isItUppercase(value) {
-//     if (value.match(/^[a-z@.]*$/)) {
-//     return true;
-//     } else {
-//     return false;
-//     }
-//     } 
+export function isItUppercase(value) {
+    if (value.match(/^[a-z@.]*$/)) {
+        return true;
+    } else {
+        return false;
+    }
+} 

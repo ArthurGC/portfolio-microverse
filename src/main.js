@@ -100,3 +100,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   closeIcon.addEventListener('click', closeModal);
 });
+
+
+//  Validation
+import { isItUppercase, email, form, error } from './validation.js';
+
+
+form.addEventListener('submit', (e) => {
+  if (isItUppercase(email.value)) {
+    error.textContent = '';
+  }else {
+    e.preventDefault();
+    error.textContent = 'Email needs to be in lowerCase';
+  }
+
+})
+
+

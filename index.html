@@ -349,7 +349,7 @@
           feature that you need built or a project that needs coding. I’d love
           to help with it
         </p>
-        <form action="https://formspree.io/f/xqkwbzdb" method="post">
+        <form id="form" action="https://formspree.io/f/xqkwbzdb" method="post">
           <ul class="ul">
             <li>
               <label for="fname" class="fw-500 fz-17 lh-20">Name:</label>
@@ -359,7 +359,7 @@
             <li>
               <label for="email" class="fw-500 fz-17 lh-20">Email:</label>
               <input type="email" id="email" class="contact__email fw-500 fz-17 lh-20" placeholder="Enter your email"
-                name="contact_email" required />
+                name="contact_email" required/>
             </li>
             <li>
               <label for="message" class="fw-500 fz-17 lh-20">Message:</label>
@@ -368,6 +368,7 @@
             </li>
             <li>
               <input type="submit" value="Get It Touch" class="btn fw-500 fz-17 lh-24" />
+              <p class="error fw-700 fz-20 lh-28"></p>
             </li>
           </ul>
         </form>

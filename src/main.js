@@ -116,3 +116,19 @@ form.addEventListener('submit', (e) => {
     error.textContent = 'X   Email should be in lowerCase';
   }
 });
+
+
+// Preserve data
+import {storageAvailable} from './localstorage.js';
+
+if (storageAvailable('localStorage')) {
+  // Yippee! We can use localStorage awesomeness
+}
+else {
+  // Too bad, no localStorage for us
+}
+
+
+form.contact_name
+form.contact_email
+

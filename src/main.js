@@ -122,7 +122,11 @@ form.addEventListener('submit', (e) => {
 import {storageAvailable} from './localstorage.js';
 
 if (storageAvailable('localStorage')) {
-  // Yippee! We can use localStorage awesomeness
+  let formData = {
+    name: form.contact_name.value,
+    email: form.contact_email.value,
+    message: form.contact_message.value,
+  }
 }
 else {
   // Too bad, no localStorage for us

@@ -122,15 +122,24 @@ form.addEventListener('submit', (e) => {
 import {storageAvailable} from './localstorage.js';
 
 if (storageAvailable('localStorage')) {
-  let formData = {
-    name: form.contact_name.value,
-    email: form.contact_email.value,
-    message: form.contact_message.value,
+
+  const setFormValues = () => {
+    let formData = {
+      name: form.contact_name.value,
+      email: form.contact_email.value,
+      message: form.contact_message.value,
+    }
+  
+    localStorage.setItem('formData', JSON.stringify(formData));
   }
+
+  form.contact_name.addEventListener('change', setFormValues);
+  form.contact_email.addEventListener('change', setFormValues);
+  form.contact_message.addEventListener('change', setFormValues);
+
+
 }
-else {
-  // Too bad, no localStorage for us
-}
+
 
 
 form.contact_name

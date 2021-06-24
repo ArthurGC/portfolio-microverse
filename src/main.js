@@ -11,12 +11,19 @@ import {
   isItUppercase, email, form, error,
 } from './validation.js';
 
+// Preserve data
+import {
+  storageAvailable,
+} from './localstorage.js';
+
+// Start Mobile menu functionality ------------------------------------->
 menuIconMobile.addEventListener('click', openMenu);
 menuLinks.forEach((menuLink) => {
   menuLink.addEventListener('click', closeMenu);
 });
+// FInish Mobile menu functionality ------------------------------------->
 
-// Event that detects when the page loads
+// Start Popup window functionality ------------------------------------->
 document.addEventListener('DOMContentLoaded', () => {
   createModal();
 
@@ -105,7 +112,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   closeIcon.addEventListener('click', closeModal);
 });
+// Finish Popup window functionality ------------------------------------->
 
+// Start validation functionality ------------------------------------->
 form.addEventListener('submit', (e) => {
   if (isItUppercase(email.value)) {
     error.textContent = '';
@@ -116,37 +125,43 @@ form.addEventListener('submit', (e) => {
     error.textContent = 'X   Email should be in lowerCase';
   }
 });
+// Finish validation functionality ------------------------------------->
 
-
-// Preserve data
-import {storageAvailable} from './localstorage.js';
-
+// Start LocalStorage functionality ------------------------------------->
 if (storageAvailable('localStorage')) {
-
   const setFormValues = () => {
-    let formData = {
+    const formData = {
       name: form.contact_name.value,
       email: form.contact_email.value,
       message: form.contact_message.value,
-    }
-  
+    };
+
     localStorage.setItem('formData', JSON.stringify(formData));
-  }
+  };
 
   form.contact_name.addEventListener('change', setFormValues);
   form.contact_email.addEventListener('change', setFormValues);
   form.contact_message.addEventListener('change', setFormValues);
 
+  let name = '';
+  let email = '';
+  let message = '';
 
-  let {name, email, message} = JSON.parse(localStorage.getItem('formData'));
+  if (JSON.parse(localStorage.getItem('formData')) === null) {
+    name = '';
+    email = '';
+    message = '';
+  } else {
+    ({ name, email, message } = JSON.parse(localStorage.getItem('formData')));
+  }
 
-  if (name !== '' || email !== '' || message !== '') {
+  if (name !== 'empty' || email !== 'empty' || message !== 'empty') {
     form.contact_name.value = name;
     form.contact_email.value = email;
     form.contact_message.value = message;
   }
 
-  // Reset form 
+  // Reset form
 
   const resetButton = document.querySelector('.btn--reset');
 
@@ -154,13 +169,10 @@ if (storageAvailable('localStorage')) {
     form.contact_name.value = '';
     form.contact_email.value = '';
     form.contact_message.value = '';
-    let formData = {
-      name: '',
-      email: '',
-      message: '',
-    }
-    localStorage.setItem('formData', JSON.stringify(formData));
-  }
+    localStorage.removeItem('formData');
+  };
 
   resetButton.addEventListener('click', resetForm);
 }
+
+// Finish LocalStorage functionality ------------------------------------->

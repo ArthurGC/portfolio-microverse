@@ -146,5 +146,22 @@ if (storageAvailable('localStorage')) {
     form.contact_message.value = message;
   }
 
+  // Reset form 
 
+  const resetButton = document.querySelector('.btn--reset');
+
+  const resetForm = () => {
+    form.contact_name.value = '';
+    form.contact_email.value = '';
+    form.contact_message.value = '';
+    let formData = {
+      name: '',
+      email: '',
+      message: '',
+    }
+    localStorage.setItem('formData', JSON.stringify(formData));
+    // console.log(localStorage.getItem('formData'));
+  }
+
+  resetButton.addEventListener('click', resetForm);
 }

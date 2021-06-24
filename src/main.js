@@ -154,7 +154,12 @@ if (storageAvailable('localStorage')) {
     form.contact_name.value = '';
     form.contact_email.value = '';
     form.contact_message.value = '';
-    localStorage.removeItem('formData');
+    let formData = {
+      name: '',
+      email: '',
+      message: '',
+    }
+    localStorage.setItem('formData', JSON.stringify(formData));
   }
 
   resetButton.addEventListener('click', resetForm);

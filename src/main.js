@@ -138,10 +138,13 @@ if (storageAvailable('localStorage')) {
   form.contact_message.addEventListener('change', setFormValues);
 
 
+  let {name, email, message} = JSON.parse(localStorage.getItem('formData'));
+
+  if (name !== '' || email !== '' || message !== '') {
+    form.contact_name.value = name;
+    form.contact_email.value = email;
+    form.contact_message.value = message;
+  }
+
+
 }
-
-
-
-form.contact_name
-form.contact_email
-

@@ -138,7 +138,8 @@
           }
         }
 
-        li:last-child {
+        li:nth-child(4),
+        li:nth-child(5) {
           text-align: center;
         }
       }

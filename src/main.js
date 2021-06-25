@@ -169,13 +169,4 @@ if (storageAvailable('localStorage')) {
     checkLocal();
   })
 }
-
-
-  //   form.contact_email.value = '';
-  //   form.contact_message.value = '';
-  //   localStorage.removeItem('formData');
-  // };
-
-  // resetButton.addEventListener('click', resetForm);
-
 // Finish LocalStorage functionality ------------------------------------->

@@ -143,13 +143,11 @@ if (storageAvailable('localStorage')) {
   form.contact_email.addEventListener('change', setFormValues);
   form.contact_message.addEventListener('change', setFormValues);
 
-
-  const checkLocal =() => {
+  const checkLocal = () => {
     let name = '';
     let email = '';
     let message = '';
-  
-  
+
     if (JSON.parse(localStorage.getItem('formData')) === null) {
       name = '';
       email = '';
@@ -157,16 +155,16 @@ if (storageAvailable('localStorage')) {
     } else {
       ({ name, email, message } = JSON.parse(localStorage.getItem('formData')));
     }
-  
+
     if (name !== 'empty' || email !== 'empty' || message !== 'empty') {
       form.contact_name.value = name;
       form.contact_email.value = email;
       form.contact_message.value = message;
     }
-  }
+  };
 
   document.addEventListener('DOMContentLoaded', () => {
     checkLocal();
-  })
+  });
 }
 // Finish LocalStorage functionality ------------------------------------->

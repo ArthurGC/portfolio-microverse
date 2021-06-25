@@ -143,36 +143,39 @@ if (storageAvailable('localStorage')) {
   form.contact_email.addEventListener('change', setFormValues);
   form.contact_message.addEventListener('change', setFormValues);
 
-  let name = '';
-  let email = '';
-  let message = '';
 
-  if (JSON.parse(localStorage.getItem('formData')) === null) {
-    name = '';
-    email = '';
-    message = '';
-  } else {
-    ({ name, email, message } = JSON.parse(localStorage.getItem('formData')));
+  const checkLocal =() => {
+    let name = '';
+    let email = '';
+    let message = '';
+  
+  
+    if (JSON.parse(localStorage.getItem('formData')) === null) {
+      name = '';
+      email = '';
+      message = '';
+    } else {
+      ({ name, email, message } = JSON.parse(localStorage.getItem('formData')));
+    }
+  
+    if (name !== 'empty' || email !== 'empty' || message !== 'empty') {
+      form.contact_name.value = name;
+      form.contact_email.value = email;
+      form.contact_message.value = message;
+    }
   }
 
-  if (name !== 'empty' || email !== 'empty' || message !== 'empty') {
-    form.contact_name.value = name;
-    form.contact_email.value = email;
-    form.contact_message.value = message;
-  }
-
-  // Reset form
-
-  const resetButton = document.querySelector('.btn--reset');
-
-  const resetForm = () => {
-    form.contact_name.value = '';
-    form.contact_email.value = '';
-    form.contact_message.value = '';
-    localStorage.removeItem('formData');
-  };
-
-  resetButton.addEventListener('click', resetForm);
+  document.addEventListener('DOMContentLoaded', () => {
+    checkLocal();
+  })
 }
+
+
+  //   form.contact_email.value = '';
+  //   form.contact_message.value = '';
+  //   localStorage.removeItem('formData');
+  // };
+
+  // resetButton.addEventListener('click', resetForm);
 
 // Finish LocalStorage functionality ------------------------------------->

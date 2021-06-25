@@ -781,7 +781,8 @@ body {
     max-width: 447px;
   }
 
-  .contact__container form li:last-child {
+  .contact__container form li:nth-child(4),
+  .contact__container form li:nth-child(5) {
     text-align: center;
   }
 

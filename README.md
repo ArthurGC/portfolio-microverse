@@ -3,11 +3,6 @@
 # Portfolio Project
 
 In this project, I set up my portfolio repository. My goal here was to set up and customize my portfolio for mobile and desktop versions.
-
-- ![screenshot](/images/mobile_preview_v1.png)
-- ![screenshot](/images/mobile_preview_v2.png)
-- ![screenshot](/images/mobile_preview_v3.png)
-- ![screenshot](/images/mobile_preview_v4.png)
 ## :red_circle: Live Demo
 
 [Live Preview Link](https://arthurgc.github.io/portfolio-microverse/)

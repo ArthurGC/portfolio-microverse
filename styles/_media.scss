@@ -32,8 +32,8 @@
   }
 
   .head::before {
-    background-image: url(../images/desktop/headline-background.svg);
-    padding: 6rem;
+    // background-image: url(../images/desktop/headline-background.svg);
+    // padding: 6rem;
     border-bottom-left-radius: 8rem;
   }
 
@@ -111,15 +111,8 @@
     }
   }
 
-  .contact::before {
-    background-image: url(../images/desktop/contact-form-background.svg);
-    padding: 1rem;
-    border-top-left-radius: 8rem;
-  }
-
   .contact {
     padding: 6rem 8.875rem;
-    background: $clr-neutral-100;
 
     &__dsc {
       max-width: 570px;

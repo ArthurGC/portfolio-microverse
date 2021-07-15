@@ -38,11 +38,11 @@
 }
 
 .clr-p-500 {
-  color: $clr-primary-500;
+  color: $clr-background-dark;
 }
 
 .clr-p-400 {
-  color: $clr-primary-400;
+  color: $clr-background-dark;
 }
 
 .clr-p-300 {
@@ -154,7 +154,7 @@
 @keyframes btn-hover {
   100% {
     box-shadow:
-      inset 11rem 0 0 0 $clr-primary-400,
+      inset 11rem 0 0 0 $clr-background-dark,
       0 8px 16px rgba(64, 83, 252, 0.24);
     color: #fff;
   }

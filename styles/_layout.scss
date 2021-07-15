@@ -1,39 +1,32 @@
 @use 'variables' as *;
 
+.hero {
+  background-color: $clr-background-dark;
+  background-image: linear-gradient(43deg, $clr-background-dark 0%, $clr-background-mid 46%, $clr-background-light 100%);
+  border-bottom-left-radius: 5rem;
+}
 .navbar {
   padding: 1rem 1.5rem;
   align-items: center;
   justify-content: space-between;
   position: relative;
 
+
   &__link {
-    color: $clr-primary-700;
+    color: $clr-neutral-100;
     animation-name: rotate-logo;
     animation-duration: 1.5s;
     animation-iteration-count: 1;
+  }
+
+  &__menu__link {
+    color: $clr-neutral-100;
   }
 
   &__hamb {
     cursor: pointer;
     z-index: 100;
   }
-}
-
-.head::before {
-  content: '';
-  position: absolute;
-  background-color: $clr-neutral-100;
-  background-image: url('https://raw.githubusercontent.com/ArthurGC/portfolio-microverse/add-set-up-mobile-version--portfolio/images/shapes.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-origin: content-box;
-  border-bottom-left-radius: 5rem;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
 }
 
 .head {
@@ -44,7 +37,7 @@
   z-index: 10;
 
   &__title {
-    color: $clr-neutral-800;
+    color: $clr-neutral-100;
     width: 10ch;
 
     span {
@@ -55,18 +48,22 @@
 
   &__dsc {
     margin: 0.8rem 0;
-    color: $clr-neutral-600;
+    color: $clr-neutral-100;
   }
 
   &__link {
     text-transform: uppercase;
+    color: $clr-background-dark;
+    background: $clr-neutral-100;
+    border-radius: 1.5rem;
+    padding: .6rem 1.5rem;
   }
 
   &__icons {
     margin: 0.5rem 0;
     align-items: center;
     justify-content: space-between;
-    width: 11rem;
+    width: 6rem;
   }
 }
 
@@ -85,6 +82,7 @@
     align-items: flex-start;
     border-radius: 1rem;
     border: 1px solid #dfe1e6;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.4);
 
     &__img {
       width: 100%;
@@ -122,7 +120,7 @@
         width: 124px;
         height: 48px;
         padding: 12px;
-        border: 1px solid #6070ff;
+        border: 1px solid $clr-background-dark;
         border-radius: 8px;
         cursor: pointer;
       }
@@ -153,14 +151,14 @@
     margin: 1.3rem 0 1rem;
     align-items: center;
     justify-content: space-between;
-    width: 11rem;
+    width: 6rem;
   }
 
   .btn {
     width: 162px;
     height: 48px;
     padding: 12px;
-    border: 1px solid #6070ff;
+    border: 1px solid $clr-background-dark;
     border-radius: 8px;
     cursor: pointer;
   }
@@ -216,23 +214,6 @@
   }
 }
 
-.contact::before {
-  content: '';
-  position: absolute;
-  background-color: $clr-primary-400;
-  background-image: url('https://raw.githubusercontent.com/ArthurGC/portfolio-microverse/c8dcf1476c30337e684a9325358fe7f2b7410486/images/contact-form-shapes-mobile.svg');
-  background-size: contain;
-  background-position: right;
-  background-origin: content-box;
-  background-repeat: no-repeat;
-  border-top-left-radius: 5rem;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
 .contact {
   position: relative;
   padding: 6.4375rem 1.5rem 1.5rem;
@@ -240,6 +221,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: $clr-background-dark-con;
+  background-image: linear-gradient(43deg, $clr-background-dark-con 0%, $clr-background-mid-con 46%, $clr-background-light-con 100%);
+  border-top-left-radius: 5rem;
 
   &__title {
     color: $clr-neutral-100;
@@ -284,7 +268,7 @@
           width: 162px;
           height: 48px;
           padding: 12px;
-          color: #6070ff;
+          color: $clr-background-dark-con;
           cursor: pointer;
           margin: 18px 0;
         }

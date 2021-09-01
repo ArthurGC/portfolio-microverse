@@ -24,8 +24,8 @@ export const projects = [
     tool1: 'html',
     tool2: 'css',
     tool3: 'javascript',
-    linkLive: 'https://arthurgc.github.io/crowdfunding-product-page/',
-    linkSource: 'https://github.com/ArthurGC/crowdfunding-product-page',
+    linkLive: 'https://github.com/ArthurGC/Mastercraft_Bamboo_Monitor_Website',
+    linkSource: 'https://arthurgc.github.io/Mastercraft_Bamboo_Monitor_Website/',
   },
   {
     name: 'Blogr',
